@@ -7,6 +7,18 @@ const char * TA::getType()
 	return "";
 }
 
+void TA::list()
+{
+}
+
+void TA::evaluate()
+{
+}
+
+void TA::printState()
+{
+}
+
 TA::TA()
 {
 }

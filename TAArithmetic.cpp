@@ -2,7 +2,7 @@
 
 
 
-TAArithmetic::TAArithmetic()
+TAArithmetic::TAArithmetic() : TAPrimitiveTypes()
 {
 }
 

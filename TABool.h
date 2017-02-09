@@ -6,9 +6,13 @@ private:
 	bool value;
 
 public:
-	TABool();
+	TABool(string name);
 	~TABool();
 
 	const char* getType() override;
+	void set(bool x);
+	void evaluate() override;
+	void list() override;
+
 };
 

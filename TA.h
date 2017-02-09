@@ -15,5 +15,8 @@ public:
 	TA();
 
 	virtual const char* getType();
+	virtual void list();
+	virtual void evaluate();
+	virtual void printState();
 };
 

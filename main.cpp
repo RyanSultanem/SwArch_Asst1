@@ -13,12 +13,13 @@ using namespace std;
 
 int main()
 {
-	TAInt* x = new TAInt();
-	TADouble* d = new TADouble();
+	TAInt* x = new TAInt("x");
+	x->list();
+	TADouble* d = new TADouble("d");
 	
 	TACieling* y = new TACieling(d);
 
-	TABool* b = new TABool();
+	TABool* b = new TABool("b");
 	TALessThan* t1 = new TALessThan(x, y);
 
 	TAAnd* t2 = new TAAnd(b, t1);

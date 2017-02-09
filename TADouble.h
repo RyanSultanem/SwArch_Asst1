@@ -6,9 +6,12 @@ private:
 	double value;
 
 public:
-	TADouble();
+	TADouble(string name);
 	~TADouble();
 
 	const char* getType() override;
+	void set(double x);
+	void evaluate() override;
+	void list() override;
 };
 
