@@ -7,5 +7,6 @@ public:
 	~TAAnd();
 
 	const char* getType() override;
+
 };
 

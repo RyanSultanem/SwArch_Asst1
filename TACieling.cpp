@@ -5,6 +5,7 @@
 TACieling::TACieling(TA* in)
 {
 	checkAndSet(in, false);
+	name = "cieling";
 }
 
 

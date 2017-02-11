@@ -23,3 +23,10 @@ TAOperatorsUnary::TAOperatorsUnary()
 TAOperatorsUnary::~TAOperatorsUnary()
 {
 }
+
+void TAOperatorsUnary::list()
+{
+	cout << "(" << name << " ";
+	first->list();
+	cout << " )";
+}

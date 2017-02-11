@@ -9,5 +9,6 @@ protected:
 
 public:
 	TAOperatorsBinary();
+	void list() override;
 };
 

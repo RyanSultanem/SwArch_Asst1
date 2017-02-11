@@ -5,6 +5,7 @@
 TAFloor::TAFloor(TA* in)
 {
 	checkAndSet(in, false);
+	name = "floor";
 }
 
 

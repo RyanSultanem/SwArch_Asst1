@@ -5,6 +5,7 @@
 TAMinus::TAMinus(TA* in)
 {
 	checkAndSet(in, false);
+	name = "-";
 }
 
 

@@ -5,6 +5,7 @@
 TAOr::TAOr(TA* in1, TA* in2)
 {
 	checkAndSet(in1, in2, true);
+	name = "|";
 }
 
 

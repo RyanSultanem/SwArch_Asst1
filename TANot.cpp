@@ -5,6 +5,7 @@
 TANot::TANot(TA* in)
 {
 	checkAndSet(in, true);
+	name = "not";
 }
 
 

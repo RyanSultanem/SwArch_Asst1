@@ -8,5 +8,7 @@ protected:
 public:
 	TAOperatorsUnary();
 	~TAOperatorsUnary();
+
+	void list() override;
 };
 

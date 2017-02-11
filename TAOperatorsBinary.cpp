@@ -19,3 +19,12 @@ void TAOperatorsBinary::checkAndSet(TA* in1, TA* in2, bool isBoolean)
 TAOperatorsBinary::TAOperatorsBinary()
 {
 }
+
+void TAOperatorsBinary::list()
+{
+	cout << "(" << name << " ";
+	first->list();
+	cout << " ";
+	second->list();
+	cout << " )";
+}
