@@ -3,7 +3,6 @@
 class TAInt : public TAArithmetic
 {
 private:
-	int value;
 
 public:
 	TAInt(string name);
@@ -13,5 +12,7 @@ public:
 	void set(int x);
 	void evaluate() override;
 	void list() override;
+
+	int getValue();
 };
 

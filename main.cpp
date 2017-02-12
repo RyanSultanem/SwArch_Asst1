@@ -13,18 +13,28 @@ using namespace std;
 
 int main()
 {
-	TAInt* x = new TAInt("x");
-	TADouble* d = new TADouble("d");
-	
-	TACieling* y = new TACieling(d);
+//	TAInt* x = new TAInt("x");
+//	TADouble* d = new TADouble("d");
+//	
+//	TACieling* y = new TACieling(d);
+//
+//	TABool* b = new TABool("b");
+//	TALessThan* t1 = new TALessThan(x, y);
+//
+//	TAAnd* t2 = new TAAnd(b, t1);
+//	
+//	t2->list();
+//	cout << endl;
 
-	TABool* b = new TABool("b");
-	TALessThan* t1 = new TALessThan(x, y);
+	TABool* b = new TABool("Ma Bool");
+	b->set(true);
+	cout << b->getValue() << "\t" << b->getValuePointer() << endl;
+	b->set(false);
+	cout << b->getValue() << "\t" << b->getValuePointer() << endl;
+	b->set(true);
+	cout << b->getValue() << "\t" << b->getValuePointer() << endl;
 
-	TAAnd* t2 = new TAAnd(b, t1);
-	
-	t2->list();
-	cout << endl;
+	b->list();
 
 	system("PAUSE");
 	return 0;

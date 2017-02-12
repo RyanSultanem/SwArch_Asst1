@@ -19,6 +19,11 @@ void TA::printState()
 {
 }
 
+void * TA::getValuePointer()
+{
+	return value;
+}
+
 TA::TA()
 {
 }

@@ -3,7 +3,6 @@
 class TABool : public TAPrimitiveTypes
 {
 private:
-	bool value;
 
 public:
 	TABool(string name);
@@ -13,6 +12,7 @@ public:
 	void set(bool x);
 	void evaluate() override;
 	void list() override;
+	bool getValue();
 
 };
 

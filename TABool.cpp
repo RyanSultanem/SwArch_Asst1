@@ -5,6 +5,7 @@
 TABool::TABool(string name) : TAPrimitiveTypes()
 {
 	this->name = name;
+	value = new bool();
 }
 
 
@@ -14,13 +15,14 @@ TABool::~TABool()
 
 const char * TABool::getType()
 {
-	return typeid(value).name();
+	return typeid(bool).name();
 }
 
 void TABool::set(bool x)
 {
 	isValueSet = true;
-	value = x;
+	delete value;
+	value = new bool(x);
 }
 
 void TABool::evaluate()
@@ -38,4 +40,9 @@ void TABool::evaluate()
 void TABool::list()
 {
 	cout << name;
+}
+
+bool TABool::getValue()
+{
+	return *(bool*)value;
 }

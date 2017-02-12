@@ -10,6 +10,7 @@ class TA
 {
 protected:
 	string name;
+	void* value;
 
 public:
 	TA();
@@ -18,5 +19,6 @@ public:
 	virtual void list();
 	virtual void evaluate();
 	virtual void printState();
+	virtual void* getValuePointer();
 };
 

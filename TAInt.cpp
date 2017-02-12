@@ -5,6 +5,7 @@
 TAInt::TAInt(string name) : TAArithmetic()
 {
 	this->name = name;
+	value = new int();
 }
 
 
@@ -20,7 +21,8 @@ const char * TAInt::getType()
 void TAInt::set(int x)
 {
 	isValueSet = true;
-	value = x;
+	delete value;
+	value = new int(x);
 }
 
 void TAInt::evaluate()
@@ -40,4 +42,9 @@ void TAInt::evaluate()
 void TAInt::list()
 {
 	cout << name;
+}
+
+int TAInt::getValue()
+{
+	return *(int*)value;
 }

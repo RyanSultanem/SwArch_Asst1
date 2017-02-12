@@ -5,6 +5,7 @@
 TADouble::TADouble(string name) : TAArithmetic()
 {
 	this->name = name;
+	value = new double();
 }
 
 
@@ -20,7 +21,8 @@ const char * TADouble::getType()
 void TADouble::set(double x)
 {
 	isValueSet = true;
-	value = x;
+	delete value;
+	value = new double(x);
 }
 
 void TADouble::evaluate()
@@ -38,4 +40,9 @@ void TADouble::evaluate()
 void TADouble::list()
 {
 	cout << name;
+}
+
+double TADouble::getValue()
+{
+	return *(double*)value;
 }
