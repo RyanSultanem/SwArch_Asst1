@@ -15,7 +15,7 @@ TADouble::~TADouble()
 
 const char * TADouble::getType()
 {
-	return typeid(value).name();
+	return typeid(double).name();
 }
 
 void TADouble::set(double x)

@@ -15,7 +15,7 @@ TAInt::~TAInt()
 
 const char * TAInt::getType()
 {
-	return typeid(value).name();
+	return typeid(int).name();
 }
 
 void TAInt::set(int x)
