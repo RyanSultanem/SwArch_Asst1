@@ -16,7 +16,7 @@ void TAOperatorsBinary::checkAndSet(TA* in1, TA* in2, bool isBoolean)
 	}
 }
 
-TAOperatorsBinary::TAOperatorsBinary()
+TAOperatorsBinary::TAOperatorsBinary() : TAOperators()
 {
 }
 

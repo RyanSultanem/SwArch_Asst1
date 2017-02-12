@@ -2,7 +2,7 @@
 
 
 
-TAAnd::TAAnd(TA* in1, TA* in2)
+TAAnd::TAAnd(TA* in1, TA* in2) : TAOperatorsBinary()
 {
 	checkAndSet(in1, in2, true);
 	name = "&";
@@ -20,11 +20,24 @@ const char * TAAnd::getType()
 
 void TAAnd::printState()
 {
-	cout << value << endl;
+	if (isEvaluated)
+	{
+		cout << *(bool*)value << endl;
+	}
+	else
+	{
+		cout << "Value not evaluated yet for " << name << endl;
+	}
 }
 
 void TAAnd::evaluate()
 {
+	delete value;
 
+	bool temp = *(bool*)first->getValuePointer() && *(bool*)second->getValuePointer();
+
+	value = new bool(temp);
+	
+	isEvaluated = true;
 }
 

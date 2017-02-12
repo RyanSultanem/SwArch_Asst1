@@ -8,5 +8,7 @@ public:
 	~TAMultiply();
 
 	const char* getType() override;
+	void printState() override;
+	void evaluate() override;
 };
 

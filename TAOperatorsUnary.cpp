@@ -15,7 +15,7 @@ void TAOperatorsUnary::checkAndSet(TA* in, bool isBoolean)
 	}
 }
 
-TAOperatorsUnary::TAOperatorsUnary()
+TAOperatorsUnary::TAOperatorsUnary() : TAOperators()
 {
 }
 

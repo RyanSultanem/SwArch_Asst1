@@ -8,5 +8,8 @@ public:
 	~TAFloor();
 
 	const char* getType() override;
+	void printState() override;
+	void evaluate() override;
+
 };
 

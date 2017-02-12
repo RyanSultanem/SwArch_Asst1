@@ -4,5 +4,5 @@
 
 TAOperators::TAOperators()
 {
-
+	isEvaluated = false;
 }

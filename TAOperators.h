@@ -3,7 +3,7 @@
 class TAOperators : public TA
 {
 protected:
-	
+	bool isEvaluated;
 
 public:
 	TAOperators();

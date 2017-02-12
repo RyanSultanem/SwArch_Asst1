@@ -17,3 +17,26 @@ const char * TAOr::getType()
 {
 	return typeid(bool).name();
 }
+
+void TAOr::printState()
+{
+	if (isEvaluated)
+	{
+		cout << *(bool*)value << endl;
+	}
+	else
+	{
+		cout << "Value not evaluated yet for " << name << endl;
+	}
+}
+
+void TAOr::evaluate()
+{
+	delete value;
+
+	bool temp = *(bool*)first->getValuePointer() || *(bool*)second->getValuePointer();
+
+	value = new bool(temp);
+
+	isEvaluated = true;
+}
