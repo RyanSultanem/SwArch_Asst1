@@ -18,3 +18,13 @@ const char * TAAnd::getType()
 	return typeid(bool).name();
 }
 
+void TAAnd::printState()
+{
+	cout << value << endl;
+}
+
+void TAAnd::evaluate()
+{
+
+}
+
