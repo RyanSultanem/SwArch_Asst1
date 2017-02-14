@@ -5,6 +5,7 @@
 TAPrimitiveTypes::TAPrimitiveTypes()
 {
 	isValueSet = false;
+	isConst = false;
 }
 
 

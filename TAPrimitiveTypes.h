@@ -4,6 +4,7 @@ class TAPrimitiveTypes : public TAData
 {
 protected:
 	bool isValueSet;
+	bool isConst;
 
 public:
 	TAPrimitiveTypes();
