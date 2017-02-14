@@ -2,7 +2,7 @@
 
 
 
-TAXor::TAXor(TA* in1, TA* in2)
+TAXor::TAXor(TAData* in1, TAData* in2)
 {
 	checkAndSet(in1, in2, true);
 	name = "xor";

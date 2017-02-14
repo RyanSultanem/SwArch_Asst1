@@ -4,7 +4,7 @@ class TAMinusBinary :
 	public TAOperatorsBinary
 {
 public:
-	TAMinusBinary(TA* in1, TA* in2);
+	TAMinusBinary(TAData* in1, TAData* in2);
 	~TAMinusBinary();
 
 	const char* getType() override;

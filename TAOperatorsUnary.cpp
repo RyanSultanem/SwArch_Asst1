@@ -2,7 +2,7 @@
 
 
 
-void TAOperatorsUnary::checkAndSet(TA* in, bool isBoolean)
+void TAOperatorsUnary::checkAndSet(TAData* in, bool isBoolean)
 {
 	if ((in->getType() == typeid(bool).name() && isBoolean) || (in->getType() != typeid(bool).name() && !isBoolean))
 	{

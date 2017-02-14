@@ -4,7 +4,7 @@ class TAMultiply :
 	public TAOperatorsBinary
 {
 public:
-	TAMultiply(TA* in1, TA* in2);
+	TAMultiply(TAData* in1, TAData* in2);
 	~TAMultiply();
 
 	const char* getType() override;

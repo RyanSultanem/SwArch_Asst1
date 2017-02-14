@@ -2,7 +2,7 @@
 
 
 
-TANot::TANot(TA* in)
+TANot::TANot(TAData* in)
 {
 	checkAndSet(in, true);
 	name = "not";

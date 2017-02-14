@@ -4,7 +4,7 @@ class TAFloor :
 	public TAOperatorsUnary
 {
 public:
-	TAFloor(TA* in);
+	TAFloor(TAData* in);
 	~TAFloor();
 
 	const char* getType() override;

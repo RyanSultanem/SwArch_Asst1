@@ -2,7 +2,7 @@
 
 
 
-TACieling::TACieling(TA* in) : TAOperatorsUnary()
+TACieling::TACieling(TAData* in) : TAOperatorsUnary()
 {
 	checkAndSet(in, false);
 	name = "cieling";

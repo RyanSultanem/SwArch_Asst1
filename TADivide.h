@@ -4,7 +4,7 @@ class TADivide :
 	public TAOperatorsBinary
 {
 public:
-	TADivide(TA* in1, TA* in2);
+	TADivide(TAData* in1, TAData* in2);
 	~TADivide();
 
 	const char* getType() override;

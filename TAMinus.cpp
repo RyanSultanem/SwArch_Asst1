@@ -2,7 +2,7 @@
 
 
 
-TAMinus::TAMinus(TA* in)
+TAMinus::TAMinus(TAData* in)
 {
 	checkAndSet(in, false);
 	name = "-";

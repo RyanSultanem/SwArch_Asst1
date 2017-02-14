@@ -4,7 +4,7 @@ class TANot : public TAOperatorsUnary
 {
 
 public:
-	TANot(TA* in);
+	TANot(TAData* in);
 	~TANot();
 
 	const char* getType() override;

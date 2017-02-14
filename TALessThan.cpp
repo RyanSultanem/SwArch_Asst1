@@ -2,7 +2,7 @@
 
 
 
-TALessThan::TALessThan(TA* in1, TA* in2)
+TALessThan::TALessThan(TAData* in1, TAData* in2)
 {
 	checkAndSet(in1, in2, false);
 	name = "<";

@@ -1,6 +1,6 @@
 #pragma once
-#include "TA.h"
-class TAPrimitiveTypes : public TA
+#include "TAData.h"
+class TAPrimitiveTypes : public TAData
 {
 protected:
 	bool isValueSet;

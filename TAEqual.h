@@ -4,7 +4,7 @@ class TAEqual :
 	public TAOperatorsBinary
 {
 public:
-	TAEqual(TA* in1, TA* in2);
+	TAEqual(TAData* in1, TAData* in2);
 	~TAEqual();
 
 	const char* getType() override;

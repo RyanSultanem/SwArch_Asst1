@@ -2,7 +2,7 @@
 
 
 
-TAAnd::TAAnd(TA* in1, TA* in2) : TAOperatorsBinary()
+TAAnd::TAAnd(TAData* in1, TAData* in2) : TAOperatorsBinary()
 {
 	checkAndSet(in1, in2, true);
 	name = "&";

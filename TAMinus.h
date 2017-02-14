@@ -3,7 +3,7 @@
 class TAMinus : public TAOperatorsUnary
 {
 public:
-	TAMinus(TA* in);
+	TAMinus(TAData* in);
 	~TAMinus();
 
 	const char* getType() override;

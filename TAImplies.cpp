@@ -2,7 +2,7 @@
 
 
 
-TAImplies::TAImplies(TA* in1, TA* in2)
+TAImplies::TAImplies(TAData* in1, TAData* in2)
 {
 	checkAndSet(in1, in2, true);
 	name = "implies";

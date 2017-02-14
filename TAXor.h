@@ -4,7 +4,7 @@ class TAXor :
 	public TAOperatorsBinary
 {
 public:
-	TAXor(TA* in1, TA* in2);
+	TAXor(TAData* in1, TAData* in2);
 	~TAXor();
 
 	const char* getType() override;

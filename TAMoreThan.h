@@ -4,7 +4,7 @@ class TAMoreThan :
 	public TAOperatorsBinary
 {
 public:
-	TAMoreThan(TA* in1, TA* in2);
+	TAMoreThan(TAData* in1, TAData* in2);
 	~TAMoreThan();
 
 	const char* getType() override;

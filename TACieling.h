@@ -3,7 +3,7 @@
 class TACieling : public TAOperatorsUnary
 {
 public:
-	TACieling(TA* in);
+	TACieling(TAData* in);
 	~TACieling();
 
 	const char* getType() override;

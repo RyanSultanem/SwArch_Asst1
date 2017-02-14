@@ -3,9 +3,9 @@
 class TAOperatorsBinary : public TAOperators
 {
 protected:
-	TA* second;
+	TAData* second;
 
-	void checkAndSet(TA* in1, TA* in2, bool needBoolean);
+	void checkAndSet(TAData* in1, TAData* in2, bool needBoolean);
 
 public:
 	TAOperatorsBinary();

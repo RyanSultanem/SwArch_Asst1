@@ -3,7 +3,7 @@
 class TAOperatorsUnary : public TAOperators
 {
 protected:
-	void checkAndSet(TA* in, bool isBoolean);
+	void checkAndSet(TAData* in, bool isBoolean);
 
 public:
 	TAOperatorsUnary();

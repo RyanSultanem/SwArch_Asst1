@@ -2,7 +2,7 @@
 
 
 
-TADivide::TADivide(TA* in1, TA* in2)
+TADivide::TADivide(TAData* in1, TAData* in2)
 {
 	checkAndSet(in1, in2, false);
 	name = "/";

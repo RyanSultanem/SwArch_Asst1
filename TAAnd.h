@@ -5,7 +5,7 @@ class TAAnd : public TAOperatorsBinary
 private:
 
 public:
-	TAAnd(TA* in1, TA* in2);
+	TAAnd(TAData* in1, TAData* in2);
 	~TAAnd();
 
 	const char* getType() override;

@@ -2,7 +2,7 @@
 
 
 
-TAEqual::TAEqual(TA* in1, TA* in2)
+TAEqual::TAEqual(TAData* in1, TAData* in2)
 {
 	checkAndSet(in1, in2, false);
 	name = "=";

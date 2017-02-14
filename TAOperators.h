@@ -1,12 +1,12 @@
 #pragma once
-#include "TA.h"
-class TAOperators : public TA
+#include "TAData.h"
+class TAOperators : public TAData
 {
 protected:
 	bool isEvaluated;
 
 public:
 	TAOperators();
-	TA* first;
+	TAData* first;
 };
 

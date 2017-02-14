@@ -2,7 +2,7 @@
 
 
 
-void TAOperatorsBinary::checkAndSet(TA* in1, TA* in2, bool isBoolean)
+void TAOperatorsBinary::checkAndSet(TAData* in1, TAData* in2, bool isBoolean)
 {
 	if ((in1->getType() == typeid(bool).name() && in2->getType() == typeid(bool).name() && isBoolean) || (in1->getType() != typeid(bool).name() && in2->getType() != typeid(bool).name() && !isBoolean))
 	{

@@ -2,7 +2,7 @@
 
 
 
-TAFloor::TAFloor(TA* in)
+TAFloor::TAFloor(TAData* in)
 {
 	checkAndSet(in, false);
 	name = "floor";
